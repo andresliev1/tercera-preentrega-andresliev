@@ -14,17 +14,18 @@
     justify-content: space-between;
 
     .img-prod {
-      width: 250px;
-      height: 200px;
+      width: $ancho;
+      height: $alto;
     }
     .ppsection123 {
       font-size: 1rem;
       font-weight: 350;
     }
     input {
-      background-color: darkslategray;
-      border-color: aqua;
+      background-color: $color-button;
+      border-color: $border-button;
       align-content: center;
+      padding: 3px;
     }
   }
 }

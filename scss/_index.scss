@@ -14,7 +14,7 @@
     color: darkgray;
 
     &:hover {
-      color: rgb(52, 224, 130);
+      color: rgb(61, 80, 70);
     }
   }
 }
@@ -75,8 +75,8 @@ body {
     margin: 10px;
     padding: 5px;
     .section2-marc {
-      width: 200px;
-      height: 200px;
+      width: $ancho;
+      height: $alto;
     }
   }
 }

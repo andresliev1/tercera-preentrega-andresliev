@@ -7,7 +7,7 @@
     .tdiv-box {
       padding: 30px;
       margin: 30px;
-      background: linear-gradient(rgb(6, 94, 84), rgb(132, 116, 152));
+      background: $backgroundt;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -18,8 +18,8 @@
         margin-bottom: 1rem;
       }
       button {
-        background-color: darkslategray;
-        border-color: aqua;
+        background-color: $color-button;
+        border-color: $border-button;
         padding: 3px;
       }
     }

@@ -23,7 +23,7 @@ body {
   color: darkgray;
 }
 .col-nav .nav-link:hover {
-  color: rgb(52, 224, 130);
+  color: rgb(61, 80, 70);
 }
 
 /* index */
@@ -121,7 +121,7 @@ body footer {
   justify-content: space-between;
 }
 .productos .psection-prod .img-prod {
-  width: 250px;
+  width: 200px;
   height: 200px;
 }
 .productos .psection-prod .ppsection123 {
@@ -132,6 +132,7 @@ body footer {
   background-color: darkslategray;
   border-color: aqua;
   align-content: center;
+  padding: 3px;
 }
 
 .cmaincompra {
