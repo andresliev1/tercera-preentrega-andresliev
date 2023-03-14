@@ -52,28 +52,35 @@
             <ul
               class="navbar-nav ul align-items: center; y justify-content: center"
             >
-              <li class="nav-item">
-                <a class="nav-link nav-link-color" href="../index.html"
+              <li>
+                <a class="nav-link" href="../index.html" target="_blank"
                   >INICIO</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-color" href="#">PRODUCTOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-color" href="../pages/compra.html"
-                  >COMPRA</a
+              <li>
+                <a
+                  class="nav-link"
+                  href="../pages/productos.html"
+                  target="_blank"
+                  >PRODUCTOS</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-color" href="../pages/nosotros.html"
+              <li>
+                <a class="nav-link" href="#">COMPRA</a>
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  href="../pages/nosotros.html"
+                  target="_blank"
                   >NOSOTROS</a
                 >
               </li>
-              <li class="nav-item">
+              <li>
                 <a
-                  class="nav-link nav-link-color"
+                  class="nav-link"
                   href="../pages/trabajaconnosotros.html"
+                  target="_blank"
                   >TRABAJA CON NOSOTROS</a
                 >
               </li>
@@ -82,101 +89,103 @@
         </div>
       </nav>
     </header>
-    <main class="cmaincompra">
-      <div class="carrito_box">
-        <h1>CARRITO DE COMPRAS</h1>
-        <img class="carrito" src="../img/carrito-de-compras.png" alt="" />
-      </div>
-      <form class="row g-3 m-3">
-        <div class="col-md-6">
-          <label for="inputname" class="form-label">Nombre</label>
-          <input type="name" class="form-control" id="inputname" />
+    <main>
+      <div class="cmaincompra">
+        <div class="carrito-box">
+          <h1>CARRITO DE COMPRAS</h1>
+          <img class="carrito" src="../img/carrito-de-compras.png" alt="" />
         </div>
-        <div class="col-md-6">
-          <label for="inputlastname" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="inputlastname" />
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Direccion</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress"
-            placeholder="1234 Main St"
-          />
-        </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">Direccion 2</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress2"
-            placeholder="Apartment, studio, or floor"
-          />
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">Ciudad y Provincia</label>
-          <input type="text" class="form-control" id="inputCity" />
-        </div>
-        <div class="col-md-6">
-          <label for="inputState" class="form-label">Producto</label>
-          <select id="inputState" class="form-select">
-            <option selected>Seleccione...</option>
-            <option value="Nissan MAX-OUT descapotable ">
-              Nissan MAX-OUT descapotable
-            </option>
-            <option value="Nissan SURF-OUT pickup">
-              Nissan SURF-OUT pickup
-            </option>
-            <option value="Vehículo utilitario Nissan HANG-OUT">
-              Vehículo utilitario Nissan HANG-OUT
-            </option>
-            <option value="PlayStation 5">PlayStation 5</option>
-            <option value="PlayStation VR">PlayStation VR</option>
-            <option value="Control de pistola">Control de pistola</option>
-            <option value="Apple car ">Apple car</option>
-            <option value="Iphone 14">Iphone 14</option>
-            <option value="Ipad Apple ">Ipad Apple</option>
-          </select>
-        </div>
+        <form class="row g-3 m-3">
+          <div class="col-md-6">
+            <label for="inputname" class="form-label">Nombre</label>
+            <input type="name" class="form-control" id="inputname" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputlastname" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="inputlastname" />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Direccion</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="1234 Main St"
+            />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Direccion 2</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress2"
+              placeholder="Apartment, studio, or floor"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Ciudad y Provincia</label>
+            <input type="text" class="form-control" id="inputCity" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Producto</label>
+            <select id="inputState" class="form-select">
+              <option selected>Seleccione...</option>
+              <option value="Nissan MAX-OUT descapotable ">
+                Nissan MAX-OUT descapotable
+              </option>
+              <option value="Nissan SURF-OUT pickup">
+                Nissan SURF-OUT pickup
+              </option>
+              <option value="Vehículo utilitario Nissan HANG-OUT">
+                Vehículo utilitario Nissan HANG-OUT
+              </option>
+              <option value="PlayStation 5">PlayStation 5</option>
+              <option value="PlayStation VR">PlayStation VR</option>
+              <option value="Control de pistola">Control de pistola</option>
+              <option value="Apple car ">Apple car</option>
+              <option value="Iphone 14">Iphone 14</option>
+              <option value="Ipad Apple ">Ipad Apple</option>
+            </select>
+          </div>
 
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">COMPRAR</button>
-        </div>
-      </form>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">COMPRAR</button>
+          </div>
+        </form>
+      </div>
     </main>
     <footer class="footer">
-      <div class="footer_iconos">
-        <div class="section_boxprod">
+      <div class="footer-iconos">
+        <div class="footer-iconos2">
           <a href="https://www.instagram.com/"
-            ><img class="footer_iiconos" src="../img/instagram-(2).png" alt=""
+            ><img class="footer-iiconos" src="../img/instagram-(2).png" alt=""
           /></a>
         </div>
-        <div class="section_boxprod">
+        <div class="footer-iconos2">
           <a href="https://twitter.com/"
-            ><img class="footer_iiconos" src="../img/twitter.png" alt=""
+            ><img class="footer-iiconos" src="../img/twitter.png" alt=""
           /></a>
         </div>
-        <div class="section_boxprod">
+        <div class="footer-iconos2">
           <a href="https://es-la.facebook.com/"
-            ><img class="footer_iiconos" src="../img/facebook.png" alt=""
+            ><img class="footer-iiconos" src="../img/facebook.png" alt=""
           /></a>
         </div>
-        <div class="section_boxprod">
+        <div class="footer-iconos2">
           <a
             href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Ffeed%2F%3Ftrk%3Dguest_homepage-basic_nav-header-signin&trk=login_reg_redirect"
-            ><img class="footer_iiconos" src="../img/linkedin.png" alt=""
+            ><img class="footer-iiconos" src="../img/linkedin.png" alt=""
           /></a>
         </div>
-        <div class="section_boxprod">
+        <div class="footer-iconos2">
           <a href="https://www.whatsapp.com/?lang=es"
-            ><img class="footer_iiconos" src="../img/whatsapp.png" alt=""
+            ><img class="footer-iiconos" src="../img/whatsapp.png" alt=""
           /></a>
         </div>
       </div>
       <div>
         &copy; copyright 2023
-        <a href="#" class="footer_copyright">Hoy Futurista</a> / Creada por
+        <a href="#" class="footer-copyright">Hoy Futurista</a> / Creada por
         Andres Ricardo Lievano
       </div>
     </footer>

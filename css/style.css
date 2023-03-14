@@ -1,3 +1,17 @@
+@media (min-width: 768px) {
+  #grilla {
+    display: grid;
+    grid-template-areas: "header header" "productos marcas" "footer footer ";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 4fr 1fr;
+    min-height: 100vh;
+  }
+  .img-section {
+    width: 300px;
+    height: 250px;
+  }
+}
+/* generales */
 * {
   margin: 0;
   padding: 0;
@@ -8,104 +22,95 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.imagen_logo {
-  width: 400px;
-  height: 200px;
-}
-
+/* INDEX */
 .col-nav {
   background-color: rgb(12, 18, 20);
   text-align: center;
   border: 12px;
   width: 100%;
-
   padding: 2px;
 }
-.nav_li {
-  overflow: hidden;
-
-  font-size: 32px;
-  margin: 5px;
-  padding: 2px;
+.col-nav ul :visited {
+  color: blanchedalmond;
 }
-
-.nav_link {
+.col-nav ul :visited .nav-link {
   text-decoration: none;
-  color: white;
   list-style-type: none;
   text-transform: uppercase;
-  color: rgb(156, 192, 184);
 }
 
-.nav {
-  text-align: center;
+body {
+  grid-template-areas: "header" "productos" "marcas " "footer";
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-columns: 1fr;
 }
-/* Main */
+body header {
+  grid-area: header;
+}
+body section#productos {
+  grid-area: productos;
+}
+body section#marcas {
+  grid-area: marcas;
+}
+body footer {
+  grid-area: footer;
+}
 
 #productos {
   background: linear-gradient(rgb(215, 222, 223), rgb(29, 67, 95));
   color: darkslategrey;
   padding: 1rem;
 }
-
-.section_boxprod {
-  margin: 10px;
-  padding: 5px;
+#productos .img-section {
+  width: 100%;
+  height: auto;
 }
+
 .section2 {
   background: linear-gradient(rgb(28, 70, 90), rgb(215, 222, 223));
   text-align: center;
   padding: 1rem;
 }
-.section2_h2 {
-  text-align: center;
-  font-weight: 400, bold;
+.section2 .section-boxprod {
+  margin: 10px;
+  padding: 5px;
 }
-.section2_marc {
+.section2 .section-boxprod .section2-marc {
   width: 200px;
   height: 200px;
 }
-/* footer */
 
 .footer {
   text-align: center;
   background-color: grey;
 }
-
-.footer_iconos {
+.footer .footer-iconos {
   background-color: rgb(105, 145, 153);
+  display: flex;
+  justify-content: center;
 }
-.footer_iiconos {
+.footer .footer-iconos .footer-iconos2 {
+  margin: 10px;
+  padding: 5px;
+}
+.footer .footer-iconos .footer-iconos2 .footer-iiconos {
   width: 40px;
   height: 40px;
 }
-
-.footer_copyright {
+.footer .footer-copyright {
   text-decoration: none;
   color: black;
 }
 
-/* Aca comienza pag productos */
-input {
-  background-color: darkslategray;
-  border-color: aqua;
-  align-content: center;
-}
-.img-prod {
-  width: 250px;
-  height: 200px;
-}
-.ppsection123 {
-  font-size: 1rem;
-  font-weight: 350;
-}
-.psection {
-  background: linear-gradient(rgb(215, 222, 223), rgb(96, 33, 84));
-  padding: 10px;
+/*PRODUCTOS */
+.productos {
+  background: linear-gradient(rgb(215, 222, 223), rgb(29, 67, 95));
+  color: darkslategrey;
+  padding: 1rem;
   text-align: center;
 }
-
-.psection-prod {
+.productos .psection-prod {
   padding: 5px;
   margin: 10px;
   background: linear-gradient(rgb(61, 35, 56), rgb(109, 183, 193));
@@ -114,47 +119,56 @@ input {
   align-items: center;
   justify-content: space-between;
 }
-
-/* Aca comienza compra */
-
-.carrito {
-  width: 200px;
+.productos .psection-prod .img-prod {
+  width: 250px;
   height: 200px;
 }
+.productos .psection-prod .ppsection123 {
+  font-size: 1rem;
+  font-weight: 350;
+}
+.productos .psection-prod input {
+  background-color: darkslategray;
+  border-color: aqua;
+  align-content: center;
+}
 
+/* COMPRA */
 .cmaincompra {
   background: linear-gradient(rgb(215, 222, 223), rgb(137, 50, 173));
   text-align: center;
   min-height: 100vh;
   padding: 1rem;
 }
-.carrito_box {
+.cmaincompra .carrito-box {
   padding: 15px;
   margin: 15px;
 }
+.cmaincompra .carrito-box .carrito {
+  width: 200px;
+  height: 200px;
+}
 
-/* Aca comienza nosotros */
-
-.nmainnosotros {
+/* NOSOTROS */
+.nosotros {
   text-align: center;
   background: linear-gradient(rgb(217, 223, 215), rgb(55, 139, 207));
 }
-.nsection1 {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-/* Aca comienza trabaja con nosotros */
-
-button {
-  background-color: darkslategray;
-  border-color: aqua;
-}
-.tsection1 {
+.nosotros .nsection1 {
   font-size: 1.5rem;
   font-weight: 300;
 }
 
-.tdiv_box {
+/* trabaja con nosotros */
+.tmaintcn {
+  text-align: center;
+  background: linear-gradient(rgb(141, 148, 138), rgb(87, 62, 120));
+}
+.tmaintcn .tsection1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.tmaintcn .tsection1 .tdiv-box {
   padding: 30px;
   margin: 30px;
   background: linear-gradient(rgb(6, 94, 84), rgb(132, 116, 152));
@@ -163,88 +177,15 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-.imgtcnsec1 {
-  width: auto;
-  height: 100%;
-}
-
-.tmaintcn {
-  text-align: center;
-  background: linear-gradient(rgb(141, 148, 138), rgb(87, 62, 120));
-}
-
-.imgtcnsec2 {
+.tmaintcn .tsection1 .tdiv-box .imgtcnsec {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
 }
-
-/* aca va el css de segunda preentrega */
-.color {
-  background-color: black;
-}
-.nav-link-color {
-  color: white;
-}
-.ul :hover {
-  color: white;
-}
-.ul :visited {
-  color: blanchedalmond;
+.tmaintcn .tsection1 .tdiv-box button {
+  background-color: darkslategray;
+  border-color: aqua;
+  padding: 3px;
 }
 
-.img-section {
-  width: 100%;
-  height: auto;
-}
-.section-pad {
-  padding: 5rem;
-}
-
-body {
-  grid-template-areas:
-    "header"
-    "productos"
-    "marcas "
-    "footer";
-  grid-template-rows: auto 1fr auto auto;
-  grid-template-columns: 1fr;
-}
-
-header {
-  grid-area: header;
-}
-section#productos {
-  grid-area: productos;
-}
-section#marcas {
-  grid-area: marcas;
-}
-footer {
-  grid-area: footer;
-}
-.footer_iconos {
-  display: flex;
-
-  justify-content: center;
-}
-@media (min-width: 768px) {
-  #grilla {
-    display: grid;
-    grid-template-areas:
-      "header header"
-      "productos marcas"
-      "footer footer ";
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 4fr 1fr;
-    min-height: 100vh;
-  }
-  .footer_iconos {
-    display: flex;
-    justify-content: center;
-  }
-  .img-section {
-    width: 300px;
-    height: 250px;
-  }
-}
+/*# sourceMappingURL=style.css.map */
