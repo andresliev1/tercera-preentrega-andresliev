@@ -174,8 +174,9 @@ button {
 }
 
 .imgtcnsec2 {
-  width: 300px;
-  height: 250px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 /* aca va el css de segunda preentrega */
