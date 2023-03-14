@@ -33,15 +33,14 @@ body {
   width: 100%;
   padding: 2px;
 
-  & li :visited {
-    color: blanchedalmond;
-    .nav-link {
-      text-decoration: none;
-      list-style-type: none;
-      text-transform: uppercase;
-    }
+  .nav-link {
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    color: darkgray;
   }
 }
+
 body {
   grid-template-areas:
     "header"

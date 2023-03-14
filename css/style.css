@@ -30,13 +30,11 @@ body {
   width: 100%;
   padding: 2px;
 }
-.col-nav li :visited {
-  color: blanchedalmond;
-}
-.col-nav li :visited .nav-link {
+.col-nav .nav-link {
   text-decoration: none;
   list-style-type: none;
   text-transform: uppercase;
+  color: darkgray;
 }
 
 body {
