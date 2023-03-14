@@ -1,0 +1,14 @@
+.cmaincompra {
+  background: linear-gradient(rgb(215, 222, 223), rgb(137, 50, 173));
+  text-align: center;
+  min-height: 100vh;
+  padding: 1rem;
+  .carrito-box {
+    padding: 15px;
+    margin: 15px;
+    .carrito {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

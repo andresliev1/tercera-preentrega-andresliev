@@ -1,17 +1,3 @@
-@media (min-width: 768px) {
-  #grilla {
-    display: grid;
-    grid-template-areas: "header header" "productos marcas" "footer footer ";
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 4fr 1fr;
-    min-height: 100vh;
-  }
-  .img-section {
-    width: 300px;
-    height: 250px;
-  }
-}
-/* generales */
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* INDEX */
+/* nav */
 .col-nav {
   background-color: rgb(12, 18, 20);
   text-align: center;
@@ -36,7 +22,11 @@ body {
   text-transform: uppercase;
   color: darkgray;
 }
+.col-nav .nav-link:hover {
+  color: rgb(52, 224, 130);
+}
 
+/* index */
 body {
   grid-template-areas: "header" "productos" "marcas " "footer";
   grid-template-rows: auto 1fr auto auto;
@@ -55,6 +45,19 @@ body footer {
   grid-area: footer;
 }
 
+@media (min-width: 768px) {
+  #grilla {
+    display: grid;
+    grid-template-areas: "header header" "productos marcas" "footer footer ";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 4fr 1fr;
+    min-height: 100vh;
+  }
+  .img-section {
+    width: 300px;
+    height: 250px;
+  }
+}
 #productos {
   background: linear-gradient(rgb(215, 222, 223), rgb(29, 67, 95));
   color: darkslategrey;
@@ -79,6 +82,7 @@ body footer {
   height: 200px;
 }
 
+/* footer */
 .footer {
   text-align: center;
   background-color: grey;
@@ -101,7 +105,6 @@ body footer {
   color: black;
 }
 
-/*PRODUCTOS */
 .productos {
   background: linear-gradient(rgb(215, 222, 223), rgb(29, 67, 95));
   color: darkslategrey;
@@ -131,7 +134,6 @@ body footer {
   align-content: center;
 }
 
-/* COMPRA */
 .cmaincompra {
   background: linear-gradient(rgb(215, 222, 223), rgb(137, 50, 173));
   text-align: center;
@@ -147,7 +149,6 @@ body footer {
   height: 200px;
 }
 
-/* NOSOTROS */
 .nosotros {
   text-align: center;
   background: linear-gradient(rgb(217, 223, 215), rgb(55, 139, 207));
@@ -157,7 +158,6 @@ body footer {
   font-weight: 300;
 }
 
-/* trabaja con nosotros */
 .tmaintcn {
   text-align: center;
   background: linear-gradient(rgb(141, 148, 138), rgb(87, 62, 120));

@@ -1,0 +1,105 @@
+/* nav */
+
+.col-nav {
+  background-color: rgb(12, 18, 20);
+  text-align: center;
+  border: 12px;
+  width: 100%;
+  padding: 2px;
+
+  .nav-link {
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    color: darkgray;
+
+    &:hover {
+      color: rgb(52, 224, 130);
+    }
+  }
+}
+/* index */
+body {
+  grid-template-areas:
+    "header"
+    "productos"
+    "marcas "
+    "footer";
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-columns: 1fr;
+  header {
+    grid-area: header;
+  }
+  section#productos {
+    grid-area: productos;
+  }
+  section#marcas {
+    grid-area: marcas;
+  }
+  footer {
+    grid-area: footer;
+  }
+}
+
+@media (min-width: 768px) {
+  #grilla {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "productos marcas"
+      "footer footer ";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 4fr 1fr;
+    min-height: 100vh;
+  }
+
+  .img-section {
+    width: 300px;
+    height: 250px;
+  }
+}
+#productos {
+  background: linear-gradient(rgb(215, 222, 223), rgb(29, 67, 95));
+  color: darkslategrey;
+  padding: 1rem;
+  .img-section {
+    width: 100%;
+    height: auto;
+  }
+}
+.section2 {
+  background: linear-gradient(rgb(28, 70, 90), rgb(215, 222, 223));
+  text-align: center;
+  padding: 1rem;
+  .section-boxprod {
+    margin: 10px;
+    padding: 5px;
+    .section2-marc {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+/* footer */
+
+.footer {
+  text-align: center;
+  background-color: grey;
+  .footer-iconos {
+    background-color: rgb(105, 145, 153);
+    display: flex;
+    justify-content: center;
+    .footer-iconos2 {
+      margin: 10px;
+      padding: 5px;
+      .footer-iiconos {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .footer-copyright {
+    text-decoration: none;
+    color: black;
+  }
+}

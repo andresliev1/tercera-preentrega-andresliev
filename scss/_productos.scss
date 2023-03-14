@@ -1,0 +1,30 @@
+.productos {
+  background: linear-gradient(rgb(215, 222, 223), rgb(29, 67, 95));
+  color: darkslategrey;
+  padding: 1rem;
+  text-align: center;
+
+  .psection-prod {
+    padding: 5px;
+    margin: 10px;
+    background: linear-gradient(rgb(61, 35, 56), rgb(109, 183, 193));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .img-prod {
+      width: 250px;
+      height: 200px;
+    }
+    .ppsection123 {
+      font-size: 1rem;
+      font-weight: 350;
+    }
+    input {
+      background-color: darkslategray;
+      border-color: aqua;
+      align-content: center;
+    }
+  }
+}
