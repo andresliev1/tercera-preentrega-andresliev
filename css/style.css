@@ -78,8 +78,8 @@ body footer {
   padding: 5px;
 }
 .section2 .section-boxprod .section2-marc {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 /* footer */
@@ -121,8 +121,8 @@ body footer {
   justify-content: space-between;
 }
 .productos .psection-prod .img-prod {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 .productos .psection-prod .ppsection123 {
   font-size: 1rem;
@@ -146,8 +146,8 @@ body footer {
   margin: 15px;
 }
 .cmaincompra .carrito-box .carrito {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 .nosotros {
@@ -157,6 +157,12 @@ body footer {
 .nosotros .nsection1 {
   font-size: 1.5rem;
   font-weight: 300;
+}
+.nosotros .nsection1 .nos {
+  height: auto;
+  background-color: rgb(161, 111, 111);
+  background-image: linear-gradient(rgb(41, 51, 48), #89d389);
+  color: white;
 }
 
 .tmaintcn {
