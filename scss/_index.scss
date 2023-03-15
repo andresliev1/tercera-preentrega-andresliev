@@ -6,6 +6,8 @@
   border: 12px;
   width: 100%;
   padding: 2px;
+  animation-name: aparecer;
+  animation: aparecer 2s;
 
   .nav-link {
     text-decoration: none;

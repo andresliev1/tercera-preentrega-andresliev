@@ -3,3 +3,12 @@ $border-button: aqua;
 $ancho: 250px;
 $alto: 250px;
 $backgroundt: linear-gradient(rgb(6, 94, 84), rgb(132, 116, 152));
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
