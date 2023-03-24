@@ -49,6 +49,9 @@ body {
 .col-nav .nav-link:hover {
   color: rgb(16, 241, 121);
 }
+.col-nav .active {
+  color: rgb(80, 130, 95) !important;
+}
 
 /* index */
 body {
