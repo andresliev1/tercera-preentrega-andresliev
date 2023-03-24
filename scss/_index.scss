@@ -27,11 +27,12 @@
     }
   }
   .active {
-    color: rgb(80, 130, 95) !important;
+    color: rgb(86, 144, 104) !important;
   }
 }
 /* index */
-body {
+#grilla {
+  display: grid;
   grid-template-areas:
     "header"
     "productos"

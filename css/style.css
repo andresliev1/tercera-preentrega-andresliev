@@ -50,25 +50,26 @@ body {
   color: rgb(16, 241, 121);
 }
 .col-nav .active {
-  color: rgb(80, 130, 95) !important;
+  color: rgb(86, 144, 104) !important;
 }
 
 /* index */
-body {
+#grilla {
+  display: grid;
   grid-template-areas: "header" "productos" "marcas " "footer";
   grid-template-rows: auto 1fr auto auto;
   grid-template-columns: 1fr;
 }
-body header {
+#grilla header {
   grid-area: header;
 }
-body section#productos {
+#grilla section#productos {
   grid-area: productos;
 }
-body section#marcas {
+#grilla section#marcas {
   grid-area: marcas;
 }
-body footer {
+#grilla footer {
   grid-area: footer;
 }
 
