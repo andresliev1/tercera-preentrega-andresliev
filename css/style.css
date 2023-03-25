@@ -54,22 +54,22 @@ body {
 }
 
 /* index */
-#grilla {
+body {
   display: grid;
   grid-template-areas: "header" "productos" "marcas " "footer";
   grid-template-rows: auto 1fr auto auto;
   grid-template-columns: 1fr;
 }
-#grilla header {
+body header {
   grid-area: header;
 }
-#grilla section#productos {
+body section#productos {
   grid-area: productos;
 }
-#grilla section#marcas {
+body section#marcas {
   grid-area: marcas;
 }
-#grilla footer {
+body footer {
   grid-area: footer;
 }
 
@@ -106,8 +106,9 @@ body {
   padding: 5px;
 }
 .section2 .section-boxprod .section2-marc {
-  width: 250px;
-  height: 250px;
+  width: 130px;
+  height: 130px;
+  margin: 1rem;
 }
 
 /* footer */
